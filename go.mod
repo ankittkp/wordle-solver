@@ -1,3 +1,3 @@
-module github.com/jinxankit/wordle_solver
+module github.com/jinxankit/wordle-solver
 
 go 1.18

@@ -21,15 +21,8 @@ func (s *solver) makeAGuess() string {
 func (s *solver) onEndOfGame() {
 	if s.game.wonStatus {
 		fmt.Println("You won in ", s.game.guessCount, " guesses!")
+		fmt.Println("The word was: ", s.game.targetWord)
 	} else {
 		fmt.Println("You are out of guesses. The correct word was:", s.game.targetWord)
 	}
-}
-
-func (s *solver) getRandomWord() string {
-	return "random"
-}
-
-func (s *solver) guessCalled(guess string) {
-	fmt.Println("Guess called:", guess)
 }
